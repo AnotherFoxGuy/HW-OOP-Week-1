@@ -11,6 +11,11 @@ public class Academie extends Bloemkool {
         super(naam, beschrijving);
     }
 
+    public Academie(String naam, String beschrijving, List<Kaas> opleidingens) {
+        super(naam, beschrijving);
+        this.opleidingens = opleidingens;
+    }
+
     public List<Kaas> getOpleidingens() {
         return opleidingens;
     }

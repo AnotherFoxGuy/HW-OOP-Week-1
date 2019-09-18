@@ -2,6 +2,8 @@ package nl.nhl;
 
 import jexer.TApplication;
 
+import java.util.ArrayList;
+
 public class Main extends TApplication {
 
     private Main() throws Exception {
@@ -11,6 +13,19 @@ public class Main extends TApplication {
         addToolMenu();
         addFileMenu();
         addWindowMenu();
+
+        new Academie("","", new ArrayList<Kaas>() {{
+            new Opleidingen("ksks", "djjd");
+            new Opleidingen("ksks", "djjd");
+            new Opleidingen("ksks", "djjd");
+            new Opleidingen("ksks", "djjd");
+            new Opleidingen("ksks", "djjd");
+            new Opleidingen("ksks", "djjd");
+            new Opleidingen("ksks", "djjd");
+            new Opleidingen("ksks", "djjd");
+            new Opleidingen("ksks", "djjd");
+            new Opleidingen("ksks", "djjd");
+        }});
     }
 
     public static void main(String[] args) throws Exception {
