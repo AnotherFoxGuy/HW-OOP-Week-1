@@ -5,6 +5,11 @@ import java.util.List;
 public class Hogeschool extends Omschrijving {
     List<Academie> Academies;
 
+    public Hogeschool(String naam, String beschrijving, List<Academie> academies) {
+        super(naam, beschrijving);
+        Academies = academies;
+    }
+
     public Hogeschool(String naam, String beschrijving) {
         super(naam, beschrijving);
     }
